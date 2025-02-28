@@ -223,7 +223,8 @@
     <form method="post" action="" name="meal-form">
       <h4>Meal Request</h4>
       <input type="text" name="ShortName" placeholder="Short Name" required>
-      <!-- Updated: Added Iftar and Suhoor dropdowns -->
+      <!-- Added: Date input field -->
+      <input type="date" name="MealDate" required>
       <select name="Iftar" required>
         <option value="" disabled selected>Select Iftar Quantity</option>
         <option value="0">0</option>
@@ -270,7 +271,7 @@
   </div>
 
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwow1PcOrfy1JhfCssMEP_KlQCaYwP31PC4RxrycHgVzHMgxHPIMXiBBJVxthNeDV7pcw/exec'; // Replace with your Web App URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQ-1NFMLPkKVSpFMkpD6e4BTU3pN-3VvoFytiLG0-hO6WFSgtKa_3bs2y2Mixwtx6mxA/exec'; // Replace with your Web App URL
 
     // Meal Request Form Script
     const form = document.forms['meal-form'];
